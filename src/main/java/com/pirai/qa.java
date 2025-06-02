@@ -23,14 +23,18 @@ public class qa
         String replacee=text.replace("hello","hi");
         System.out.println(replacee);
 
+        String s="goof guh";
+        String replace = s.replace("f","d");
+        System.out.println(replace);
+
         String text1="hello world, hello user!";
         String replace2=text1.replaceAll("\\s","-");
         System.out.println(replace2);
 
         String input = "Java is great Java is popular Java is powerful.";
 //      String s=input.replace("Java","python");//python is great python is popular python is powerful.
-        String s=input.replaceFirst("Java","python");//python is great Java is popular Java is powerful.
-        System.out.println(s);
+        String s2=input.replaceFirst("Java","python");//python is great Java is popular Java is powerful.
+        System.out.println(s2);
 
         String s1="all is good and well";
         String s11=s1.replaceAll("[aeiouAEIOU]","*");
